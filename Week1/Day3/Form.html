@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <h2>Select your gender</h2>
+      <label>Male<input type="radio" name="gender" value="male" /> </label>
+      <label>Female<input type="radio" name="gender" value="female" /> </label>
+      <br />
+      <br />
+      <h2>Choose Language</h2>
+      <ul style="list-style-type: none">
+        <li>
+          <input type="checkbox" name="language" value="hindi" />
+          Hindi
+        </li>
+        <li>
+          <input type="checkbox" name="language" value="english" />
+          English
+        </li>
+        <li>
+          <input type="checkbox" name="language" value="sanskrite" />
+          Sanskrit
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h2>Select Your Nationality</h2>
+      <select name="language">
+        <option value="indian">Indian</option>
+        <option value="nepali">Nepali</option>
+        <option value="others">Others</option>
+      </select>
+      <br />
+      <br />
+      <h2>Welcome To FE-BOOTCAMP</h2>
+      <textarea name="welcomeMessage" rows="3" cols="40">
+       W3School is a online portal
+       </textarea
+      >
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <form action="./Form.html" git>
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <p>
+          <label>
+            Salutation
+            <br />
+            <select name="salutation" required>
+              <option>--None--</option>
+              <option>Mr.</option>
+              <option>Ms.</option>
+              <option>Mrs.</option>
+              <option>Dr.</option>
+              <option>Prof.</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label>First name: <input name="firstName" required /></label>
+        </p>
+
+        <p>
+          <label>Last name: <input name="lastName" required /></label>
+        </p>
+
+        <p>
+          Gender :
+          <label
+            ><input type="radio" name="gender" value="male" required />
+            Male
+          </label>
+          <label
+            ><input type="radio" name="gender" value="female" required />
+            Female
+          </label>
+        </p>
+
+        <p>
+          <label>Email:<input type="email" name="email" required /> </label>
+        </p>
+
+        <p>
+          <label
+            >Date of Birth:<input type="date" name="birthDate" required />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Address :
+            <br />
+            <textarea name="address" cols="30" rows="3" required> </textarea>
+          </label>
+        </p>
+        <p>
+          <label for="color"
+            >Color<input type="color" name="" id="color" required
+          /></label>
+        </p>
+        <p>
+          <label for="resume"
+            >RESUME<input type="file" name="" id="resume"
+          /></label>
+        </p>
+
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
