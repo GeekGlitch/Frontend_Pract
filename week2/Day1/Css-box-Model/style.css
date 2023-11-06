@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+}
+.parent {
+  font-size: 2em;
+  border: 2px solid red;
+}
+.child {
+  /* font-size: 4em; */
+  border: 2px solid gray;
+  width: 2em;
+}
+.div-1 {
+  width: 50vw;
+  border: 2px solid green;
+}
+.div-2 {
+  width: 24vw;
+  height: 50vh;
+  border: 2px solid red;
+}
+.div-5 {
+  width: 24vmin;
+  height: 50vh;
+  border: 2px solid red;
+}
+.div-6 {
+  width: 24vw;
+  height: 50vmax;
+  border: 2px solid red;
+}
