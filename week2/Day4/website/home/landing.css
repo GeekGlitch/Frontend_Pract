@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#hero {
+  background: url("https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNob2VzfGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #008cff;
+  z-index: 1;
+  color: black;
+  text-align: center;
+  padding: 150px 0;
+}
+
+#hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Style the service section */
+#services {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff#fff;
+}
+
+.service:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service img {
+  width: 50px;
+  height: 50px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.service p {
+  font-size: 16px;
+  color: #777;
+}
+.service-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.service-section .service-header {
+  margin: 10px;
+}
