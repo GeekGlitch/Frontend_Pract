@@ -1,0 +1,12 @@
+let divconteiner = document.createElement("div");
+divconteiner.setAttribute("id", "container");
+divconteiner.style.border = "1px solid red";
+let spancontainer = document.createElement("span");
+spancontainer.innerHTML = "Container";
+let para = document.createElement("p");
+para.innerHTML = "Hello World!";
+divconteiner.appendChild(para);
+divconteiner.appendChild(spancontainer);
+document.body.appendChild(divconteiner);
+console.log(divconteiner);
+document.getElementById("container").style.backgroundColor = "yellow";

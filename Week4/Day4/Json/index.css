@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+}
+.card {
+  width: calc(25% - 1rem);
+  height: auto;
+  margin: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card .imgBox {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+}
+.viewMore {
+  position: absolute;
+  right: -2px;
+  bottom: -128px;
+  padding: 5px;
+  margin-left: 0;
+  color: white;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  width: 7rem;
+  text-align: center;
+  border-radius: 0.3em;
+  transition: all 2s;
+}
+.best {
+  width: 8rem;
+  height: 2rem;
+  position: absolute;
+  top: 10px;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+  background: #000000;
+  text-align: center;
+  transition: all 2s;
+  left: -129px;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5%;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+button:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+button:active {
+  opacity: 0.5;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+p {
+  margin: 10px;
+}
+.imgBox:hover .best {
+  left: -2px;
+}
+.imgBox:hover .viewMore {
+  bottom: 4px;
+}
