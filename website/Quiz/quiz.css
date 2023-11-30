@@ -23,7 +23,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.correct {
+  background-color: #2ecc71;
+  color: #fff;
+}
 .option {
   cursor: pointer;
   background-color: #3498db;

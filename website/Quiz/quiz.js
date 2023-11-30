@@ -79,15 +79,24 @@ function loadQuestion() {
 
 function checkAnswer(userAnswer) {
   const currentQuizData = quizData[currentQuestion];
+  const coorectButtonIndex = currentQuizData.options.indexOf(
+    currentQuizData.correctAnswer
+  );
+
   if (userAnswer === currentQuizData.correctAnswer) {
     score++;
+    optionsContainer.children[coorectButtonIndex].classList.add("correct");
   }
 
   if (currentQuestion < quizData.length - 1) {
     currentQuestion++;
-    loadQuestion();
+    setTimeout(() => {
+      loadQuestion();
+    }, 1000);
   } else {
-    showResult();
+    setTimeout(() => {
+      showResult();
+    }, 1000);
   }
 }
 
